@@ -14,6 +14,33 @@ sklearn
 
 transformers 4.8.1
 
+## 安装指南
+
+### 快速安装（推荐）
+
+#### Windows
+
+```powershell
+# CPU 版本
+.\scripts\install.ps1 -device cpu
+
+# GPU 版本（CUDA 11.1）
+.\scripts\install.ps1 -device gpu -cuda_version 111
+```
+
+#### Linux / macOS
+
+```bash
+# CPU 版本
+bash scripts/install.sh cpu
+
+# GPU 版本（CUDA 11.1）
+bash scripts/install.sh gpu 111
+```
+
+**⚠️ GPU 用户**: 运行 `nvidia-smi` 查看 CUDA 版本后选择对应脚本参数  
+**💡 详细说明**: 查看 [scripts/README.md](scripts/README.md)
+
 ## 中文数据集
 
 从 THUCNews 中随机抽取20万条新闻标题，一共有10个类别：财经、房产、股票、教育、科技、社会、时政、体育、游戏、娱乐，每类2万条标题数据。数据集按如下划分：

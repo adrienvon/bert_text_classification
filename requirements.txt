@@ -1,0 +1,16 @@
+# BERT Text Classification Requirements
+# Python 3.7+
+# PyTorch 1.9.0: Install separately based on your device (CPU or GPU)
+#   See scripts/README.md for installation instructions
+
+# Core ML libraries
+transformers==4.8.1
+tokenizers==0.10.3
+
+# Numeric / utils
+numpy>=1.18.5,<2.0
+scikit-learn>=0.24.0,<0.25
+tqdm>=4.50.0
+
+# Backwards compatibility helpers
+typing-extensions>=3.7.4
